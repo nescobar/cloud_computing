@@ -109,18 +109,24 @@ public class SearchEngineTester {
             freq = Bytes.toInt((kv.getValue()));
             
             // Step 2: get the URI of the page from clueWeb09DataTable
-    		Get gIndexDt = new Get(pageDocIdBytes);
+    		
+            // New index on dataTable based on documentId
+            Get gIndexDt = new Get(pageDocIdBytes);
             Result indexRowDt = dataTable.get(gIndexDt);
             
+            // Get value (URI)
             KeyValue kvdt = indexRowDt.list().get(0);
             pageUriBytes = kvdt.getValue();
             pageUri = Bytes.toString(pageUriBytes);
             
             
             // Step 3: get the page rank value of this page from clueWeb09PageRankTable
+            
+            // New index on PageRank table based on documentId
             Get gIndexPr = new Get(pageDocIdBytes);
             Result indexRowPr = prTable.get(gIndexPr);
             
+            // Get actual pagerank which is stored as qualifer
             KeyValue kvpr = indexRowPr.list().get(0);
             pageRank = Bytes.toFloat(kvpr.getQualifier());    
           
