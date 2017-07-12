@@ -1,0 +1,40 @@
+2017-04-20 22:05:11,114 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2017-04-20 22:05:12,752 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2017-04-20 22:05:12,752 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system started
+2017-04-20 22:05:12,846 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2017-04-20 22:05:12,847 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1490665292908_0035, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@42a48628)
+2017-04-20 22:05:13,669 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2017-04-20 22:05:16,686 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /home/cc/tmp/hadoop-cc/nm-local-dir/usercache/cc/appcache/application_1490665292908_0035
+2017-04-20 22:05:18,205 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2017-04-20 22:05:22,211 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2017-04-20 22:05:23,417 INFO [main] org.apache.hadoop.mapred.MapTask: Processing split: edu.iu.fileformat.MultiFileSplit@60957c0f
+2017-04-20 22:05:23,653 INFO [main] org.apache.hadoop.mapred.CollectiveMapper: TRY LOCK FILE job_1490665292908_0035/lock hdfs://localhost:9010/user/cc
+2017-04-20 22:05:23,674 INFO [main] org.apache.hadoop.mapred.CollectiveMapper: Get task file job_1490665292908_0035/tasks
+2017-04-20 22:05:23,689 INFO [main] org.apache.hadoop.mapred.CollectiveMapper: Task ID 1
+2017-04-20 22:05:23,690 INFO [main] org.apache.hadoop.mapred.CollectiveMapper: WORKER ID: 1
+2017-04-20 22:05:23,690 INFO [main] org.apache.hadoop.mapred.CollectiveMapper: Get nodes file job_1490665292908_0035/nodes
+2017-04-20 22:05:23,941 INFO [main] edu.iu.harp.server.Server: Server on cc-VirtualBox 12801 starts.
+2017-04-20 22:05:24,164 INFO [main] edu.iu.harp.collective.Communication: Start sending barrier.
+2017-04-20 22:05:24,243 INFO [main] edu.iu.harp.collective.Communication: Send barrier: true
+2017-04-20 22:05:24,708 INFO [main] edu.iu.harp.collective.Communication: Barrier is received.
+2017-04-20 22:05:24,708 INFO [main] org.apache.hadoop.mapred.CollectiveMapper: Barrier: true
+2017-04-20 22:05:24,708 INFO [main] org.apache.hadoop.mapred.CollectiveMapper: Initialize Harp components (ms): 1056
+2017-04-20 22:05:24,721 INFO [main] org.apache.hadoop.mapred.CollectiveMapper: start setup20170420_220524
+2017-04-20 22:05:24,721 INFO [main] org.apache.hadoop.mapred.CollectiveMapper: config (ms) :0
+2017-04-20 22:05:24,728 INFO [main] org.apache.hadoop.mapred.CollectiveMapper: Key: hdfs://localhost:9010/mbkmeans/data/Base_PosPreMigration_1.csv value: hdfs://localhost:9010/mbkmeans/data/Base_PosPreMigration_1.csv
+2017-04-20 22:05:25,736 INFO [main] edu.iu.harp.resource.ArrayPool: edu.iu.harp.resource.BytesPool@478ee483: size=64, use=0, released=2
+2017-04-20 22:05:25,736 INFO [main] edu.iu.harp.resource.ArrayPool: edu.iu.harp.resource.BytesPool@478ee483: size=128, use=0, released=1
+2017-04-20 22:05:25,736 INFO [main] edu.iu.harp.resource.ArrayPool: edu.iu.harp.resource.BytesPool@478ee483: size=4, use=0, released=2
+2017-04-20 22:05:25,736 INFO [main] edu.iu.harp.resource.ArrayPool: edu.iu.harp.resource.BytesPool@478ee483: size=8, use=0, released=1
+2017-04-20 22:05:25,737 INFO [main] edu.iu.harp.resource.ArrayPool: edu.iu.harp.resource.BytesPool@478ee483: size=1024, use=0, released=2
+2017-04-20 22:05:25,742 INFO [main] edu.iu.harp.resource.ArrayPool: edu.iu.harp.resource.DoublesPool@1a7288a3: size=14, use=5, released=5
+2017-04-20 22:05:25,756 INFO [main] edu.iu.harp.resource.WritablePool: class: class edu.iu.harp.util.Barrier, use=0, released=1
+2017-04-20 22:05:25,756 INFO [main] edu.iu.harp.io.ConnPool: connection=cc-VirtualBox:12800, use=0, released=1
+2017-04-20 22:05:25,785 INFO [main] edu.iu.harp.server.Server: Server on cc-VirtualBox 12801 is stopped.
+2017-04-20 22:05:25,911 INFO [main] org.apache.hadoop.mapred.Task: Task:attempt_1490665292908_0035_m_000001_0 is done. And is in the process of committing
+2017-04-20 22:05:26,166 INFO [main] org.apache.hadoop.mapred.Task: Task attempt_1490665292908_0035_m_000001_0 is allowed to commit now
+2017-04-20 22:05:26,216 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_1490665292908_0035_m_000001_0' to hdfs://localhost:9010/mbkmeans/out/mbkmeans_out_0/_temporary/1/task_1490665292908_0035_m_000001
+2017-04-20 22:05:26,404 INFO [main] org.apache.hadoop.mapred.Task: Task 'attempt_1490665292908_0035_m_000001_0' done.
+2017-04-20 22:05:26,525 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping MapTask metrics system...
+2017-04-20 22:05:26,528 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system stopped.
+2017-04-20 22:05:26,530 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system shutdown complete.
